@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 30px;
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-weight: 800;
+    font-size: large;
+    text-transform: uppercase;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+}
+
+.orders-history {
+    display: flex;
+    flex-direction: column;
+}
+
+.orders-history__heading {
+    width: 350px;
+    padding: 20px;
+    cursor: pointer;
+    background-color: #d2bde6;
+}
+
+.orders-history__date {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    background-color: antiquewhite;
+    width: 350px;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.orders-history__add-date {
+    display: none;
+}
+
+.orders-history__add-date.open {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.orders-history__more-info{
+    font-style: italic;
+    color: #666565;
+}
+
+.orders-history__more-info.open{
+    display: none;
+}
+
+.orders-history__date-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 30px;
+}
+
+.products {
+    height: 300px;
+    display: flex;
+    background-color: #b6e2d3;
+    padding: 20px;
+}
+
+.products__container {
+    width: 33%;
+}
+
+.products__catalog-item {
+    width: 200px;
+    cursor: pointer;
+}
+
+.products__category {
+    width: 300px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.products__price {
+    margin-top: 15px;
+    display: block;
+}
+
+.products__button {
+    margin: 20px 0;
+}
+
+.products__message {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+form {
+    border: 1px solid #000;
+    background-color: #f6e8eb;
+    padding-top: 20px;
+    margin-right: 50px;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    width: 700px;
+}
+
+.ordering__heading {
+    margin: 0 auto;
+}
+
+.ordering__input-block {
+    border-bottom: 1px solid #000;
+    padding: 10px;
+}
+
+.ordering__input {
+    margin-bottom: 5px;
+}
+
+.ordering__input_name {
+    width: 300px;
+}
+
+textarea {
+    width: 400px;
+    height: 50px;
+}
+
+.ordering {
+    margin-top: 20px;
+    display: flex;
+}
+
+.ordering__button {
+    margin: 15px;
+}

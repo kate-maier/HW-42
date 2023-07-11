@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Інтернет-магазин</title>
+</head>
+
+<body>
+    <div class="orders-history">
+        <h2 class="orders-history__heading" id="userOrdersHeading">Мої замовлення</h2>
+        <div class="orders-history__list" id="orders" ></div>
+    </div>
+    
+    <div class="products" id="mainCatalog">
+        <div class="products__container">
+            <h2 class="products__heading">Каталог</h2>
+
+            <ul id="mainCatalog">
+                <li class="products__catalog-item" id="smartphones" data-block="smartphones">Смартфони</li>
+                <li class="products__catalog-item" id="laptops" data-block="laptops">Ноутбуки</li>
+                <li class="products__catalog-item" id="televisors" data-block="televisors">Телевізори</li>
+            </ul>
+        </div>
+        <div class="products__container">
+            <h2 class="products__heading">Товари</h2>
+            <div id="productsNames" class="products__category">
+            </div>
+        </div>
+        <div class="products__container">
+            <h2 class="products__heading">Інформація про товар</h2>
+            <div id="productsInfoCards">
+            </div>
+        </div>
+    </div>
+    <div class="ordering" id="orderingForm">
+        <form id="form">
+            <h2 class="ordering__heading">Оформлення замовлення</h2>
+            <div id="orderingProduct" class="ordering__input-block">
+            </div>
+            <div class="ordering__input-block">
+                <label for="fullName">Введіть Ваше прізвище, ім'я, по-батькові:*</label>
+                <input class="ordering__input_name" type="text" name="fullName" id="fullName">
+            </div>
+            <div class="ordering__input-block">
+                <p class="ordering__input">Оберіть місто:*</p>
+                <select name="town" id="town">
+                    <option value="kyiv">Київ</option>
+                    <option value="kharkiv">Харків</option>
+                    <option value="dnipro">Дніпро</option>
+                </select>
+            </div>
+            <div class="ordering__input-block">
+                <label for="postOffice">Вкажіть номер складу Нової пошти для надсилання:*</label>
+                <input type="text" name="postOffice" id="postOffice">
+            </div>
+            <div class="ordering__input-block">
+                <p class="ordering__input">Оберіть умови уплати:*</p>
+                <input type="radio" id="payWithCard" name="payment" checked>
+                <label for="payWithCard">Оплата карткою</label>
+
+                <input type="radio" id="postpaid" name="payment">
+                <label for="postpaid">Післяплата</label>
+            </div>
+            <div class="ordering__input-block">
+                <label for="amountProdacts">Введіть кількість товару:*</label>
+                <input type="text" name="amountProdacts" id="amountProdacts">
+            </div>
+            <div class="ordering__input-block">
+                <label for="userComments">Коментар до замовлення:</label>
+                <textarea name="userComments" id="userComments"></textarea>
+            </div>
+            <div>
+                <button class="ordering__button" id="btnSaveForm" type="button">Save</button>
+            </div>
+        </form>
+        <p id="aboutOrder"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
